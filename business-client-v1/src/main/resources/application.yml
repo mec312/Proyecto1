@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: business-client
+  cloud:
+    config:
+      name: business-client-v1
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+  main:
+    allow-bean-definition-overriding: true
+    lazy-initialization: true
+  webflux:
+    base-path: '/client/v1'
+
+info:
+  project:
+    name: @project.name@
+    description: @project.description@
+    version: @project.version@
+    type: application
+    artifact-id: @project.artifactId@
+    app-group: atla
+
+
+management:
+  endpoints:
+    web:
+      base-path: '/client/v1/actuator'
+
+server:
+  port: 8081

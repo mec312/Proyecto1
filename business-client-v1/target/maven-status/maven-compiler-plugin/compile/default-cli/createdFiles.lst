@@ -1,0 +1,14 @@
+com\project\client\business\impl\ClientServiceImpl.class
+com\project\client\internal\BaseModel$BaseModelBuilder.class
+com\project\client\internal\ClientAddRequest$ClientAddRequestBuilder.class
+com\project\client\model\Client$ClientBuilder.class
+com\project\client\business\ClientService.class
+com\project\client\ApiBsClientApplication.class
+com\project\client\dao\ClientDao.class
+com\project\client\internal\ClientAddRequest.class
+com\project\client\internal\BaseModel.class
+com\project\client\dao\impl\ClientDaoImpl.class
+com\project\client\config\CacheConfig.class
+com\project\client\repository\ClientRepository.class
+com\project\client\web\ClientController.class
+com\project\client\model\Client.class
