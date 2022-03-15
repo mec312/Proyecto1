@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "3d284535-0987-4013-99ba-f7749b2ff6c1",
+		"name": "Client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/client/addClient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"4\",\r\n    \"dni\": \"71590229\",\r\n    \"nombre\": \"Coyote E.\",\r\n    \"apellido\": \"Perico\",\r\n    \"edad\": 30,\r\n    \"tipo\": {\r\n        \"code\":\"NAT\",\r\n        \"description\": \"Natural\"\r\n    }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/client/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"client",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/client/findbyDni",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/client/findbyDni?dni=10715902281",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"client",
+						"findbyDni"
+					],
+					"query": [
+						{
+							"key": "dni",
+							"value": "10715902281"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/client/findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/client/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"client",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/client/findbyType",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"code\": \"EMP\",\r\n    \"description\": \"Empresario\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/client/findbyType",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"client",
+						"findbyType"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

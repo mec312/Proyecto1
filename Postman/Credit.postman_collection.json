@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "0b8c7528-98f1-4f35-96b1-190e6578da97",
+		"name": "Credit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/credit/addCredit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mount\": 1200.00,\r\n    \"fee\": 12,\r\n    \"type\": {\r\n        \"code\": \"PER\",\r\n        \"description\": \"Personal\"\r\n    },\r\n    \"outlay_date\": \"23/03/2021\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/credit/addCredit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"addCredit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/credit/findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/credit/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
